@@ -7,6 +7,7 @@ A console app that helps to keep a record of different types of things : books, 
 ### Prerequisites
 
 - Text editor i.e visual studio 🔥
+
 You may need to have the following dependacies installed on your computer:
 
  - Ruby (ruby --version)
