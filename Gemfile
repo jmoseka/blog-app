@@ -1,239 +1,72 @@
-GEM
-  remote: https://rubygems.org/
-  specs:
-    actioncable (7.0.3.1)
-      actionpack (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      nio4r (~> 2.0)
-      websocket-driver (>= 0.6.1)
-    actionmailbox (7.0.3.1)
-      actionpack (= 7.0.3.1)
-      activejob (= 7.0.3.1)
-      activerecord (= 7.0.3.1)
-      activestorage (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      mail (>= 2.7.1)
-      net-imap
-      net-pop
-      net-smtp
-    actionmailer (7.0.3.1)
-      actionpack (= 7.0.3.1)
-      actionview (= 7.0.3.1)
-      activejob (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      mail (~> 2.5, >= 2.5.4)
-      net-imap
-      net-pop
-      net-smtp
-      rails-dom-testing (~> 2.0)
-    actionpack (7.0.3.1)
-      actionview (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      rack (~> 2.0, >= 2.2.0)
-      rack-test (>= 0.6.3)
-      rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actiontext (7.0.3.1)
-      actionpack (= 7.0.3.1)
-      activerecord (= 7.0.3.1)
-      activestorage (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      globalid (>= 0.6.0)
-      nokogiri (>= 1.8.5)
-    actionview (7.0.3.1)
-      activesupport (= 7.0.3.1)
-      builder (~> 3.1)
-      erubi (~> 1.4)
-      rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activejob (7.0.3.1)
-      activesupport (= 7.0.3.1)
-      globalid (>= 0.3.6)
-    activemodel (7.0.3.1)
-      activesupport (= 7.0.3.1)
-    activerecord (7.0.3.1)
-      activemodel (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-    activestorage (7.0.3.1)
-      actionpack (= 7.0.3.1)
-      activejob (= 7.0.3.1)
-      activerecord (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      marcel (~> 1.0)
-      mini_mime (>= 1.1.0)
-    activesupport (7.0.3.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
-    bindex (0.8.1)
-    bootsnap (1.13.0)
-      msgpack (~> 1.2)
-    builder (3.2.4)
-    capybara (3.37.1)
-      addressable
-      matrix
-      mini_mime (>= 0.1.3)
-      nokogiri (~> 1.8)
-      rack (>= 1.6.0)
-      rack-test (>= 0.6.3)
-      regexp_parser (>= 1.5, < 3.0)
-      xpath (~> 3.2)
-    childprocess (4.1.0)
-    concurrent-ruby (1.1.10)
-    crass (1.0.6)
-    debug (1.6.2)
-      irb (>= 1.3.6)
-      reline (>= 0.3.1)
-    digest (3.1.0)
-    erubi (1.11.0)
-    globalid (1.0.0)
-      activesupport (>= 5.0)
-    i18n (1.12.0)
-      concurrent-ruby (~> 1.0)
-    importmap-rails (1.1.5)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
-    io-console (0.5.11)
-    irb (1.4.1)
-      reline (>= 0.3.0)
-    jbuilder (2.11.5)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
-    loofah (2.18.0)
-      crass (~> 1.0.2)
-      nokogiri (>= 1.5.9)
-    mail (2.7.1)
-      mini_mime (>= 0.1.1)
-    marcel (1.0.2)
-    matrix (0.4.2)
-    method_source (1.0.0)
-    mini_mime (1.1.2)
-    minitest (5.16.2)
-    msgpack (1.5.4)
-    net-imap (0.2.3)
-      digest
-      net-protocol
-      strscan
-    net-pop (0.1.1)
-      digest
-      net-protocol
-      timeout
-    net-protocol (0.1.3)
-      timeout
-    net-smtp (0.3.1)
-      digest
-      net-protocol
-      timeout
-    nio4r (2.5.8)
-    nokogiri (1.13.8-x64-mingw-ucrt)
-      racc (~> 1.4)
-    pg (1.4.3-x64-mingw-ucrt)
-    public_suffix (4.0.7)
-    puma (5.6.4)
-      nio4r (~> 2.0)
-    racc (1.6.0)
-    rack (2.2.4)
-    rack-test (2.0.2)
-      rack (>= 1.3)
-    rails (7.0.3.1)
-      actioncable (= 7.0.3.1)
-      actionmailbox (= 7.0.3.1)
-      actionmailer (= 7.0.3.1)
-      actionpack (= 7.0.3.1)
-      actiontext (= 7.0.3.1)
-      actionview (= 7.0.3.1)
-      activejob (= 7.0.3.1)
-      activemodel (= 7.0.3.1)
-      activerecord (= 7.0.3.1)
-      activestorage (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      bundler (>= 1.15.0)
-      railties (= 7.0.3.1)
-    rails-dom-testing (2.0.3)
-      activesupport (>= 4.2.0)
-      nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.3)
-      loofah (~> 2.3)
-    railties (7.0.3.1)
-      actionpack (= 7.0.3.1)
-      activesupport (= 7.0.3.1)
-      method_source
-      rake (>= 12.2)
-      thor (~> 1.0)
-      zeitwerk (~> 2.5)
-    rake (13.0.6)
-    regexp_parser (2.5.0)
-    reline (0.3.1)
-      io-console (~> 0.5)
-    rexml (3.2.5)
-    rubyzip (2.3.2)
-    selenium-webdriver (4.4.0)
-      childprocess (>= 0.5, < 5.0)
-      rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
-      websocket (~> 1.0)
-    sprockets (4.1.1)
-      concurrent-ruby (~> 1.0)
-      rack (> 1, < 3)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
-      sprockets (>= 3.0.0)
-    stimulus-rails (1.1.0)
-      railties (>= 6.0.0)
-    strscan (3.0.4)
-    thor (1.2.1)
-    timeout (0.3.0)
-    turbo-rails (1.1.1)
-      actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
-      railties (>= 6.0.0)
-    tzinfo (2.0.5)
-      concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.2)
-      tzinfo (>= 1.0.0)
-    web-console (4.2.0)
-      actionview (>= 6.0.0)
-      activemodel (>= 6.0.0)
-      bindex (>= 0.4.0)
-      railties (>= 6.0.0)
-    webdrivers (5.0.0)
-      nokogiri (~> 1.6)
-      rubyzip (>= 1.3.0)
-      selenium-webdriver (~> 4.0)
-    websocket (1.2.9)
-    websocket-driver (0.7.5)
-      websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.5)
-    xpath (3.2.0)
-      nokogiri (~> 1.8)
-    zeitwerk (2.6.0)
+source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-PLATFORMS
-  x64-mingw-ucrt
+ruby "3.1.2"
 
-DEPENDENCIES
-  bootsnap
-  capybara
-  debug
-  importmap-rails
-  jbuilder
-  pg (~> 1.1)
-  puma (~> 5.0)
-  rails (~> 7.0.3, >= 7.0.3.1)
-  selenium-webdriver
-  sprockets-rails
-  stimulus-rails
-  turbo-rails
-  tzinfo-data
-  web-console
-  webdrivers
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
-RUBY VERSION
-   ruby 3.1.2p20
+# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem "sprockets-rails"
 
-BUNDLED WITH
-   2.3.18
+# Use postgresql as the database for Active Record
+gem "pg", "~> 1.1"
+
+# Use the Puma web server [https://github.com/puma/puma]
+gem "puma", "~> 5.0"
+
+# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
+gem "importmap-rails"
+
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem "turbo-rails"
+
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem "stimulus-rails"
+
+# Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem "jbuilder"
+
+# Use Redis adapter to run Action Cable in production
+# gem "redis", "~> 4.0"
+
+# Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
+# gem "kredis"
+
+# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
+# gem "bcrypt", "~> 3.1.7"
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+
+# Reduces boot times through caching; required in config/boot.rb
+gem "bootsnap", require: false
+
+# Use Sass to process CSS
+# gem "sassc-rails"
+
+# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
+# gem "image_processing", "~> 1.2"
+
+group :development, :test do
+  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+end
+
+group :development do
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "web-console"
+
+  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
+  # gem "rack-mini-profiler"
+
+  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
+  # gem "spring"
+end
+
+group :test do
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
+end
