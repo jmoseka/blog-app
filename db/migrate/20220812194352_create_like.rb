@@ -1,8 +1,8 @@
 sclass CreateLike < ActiveRecord::Migration[7.0]
   def change
     create_table :likes do |t|
-      t.integer :authorId
-      t.integer :postId
+      t.integer :author_id
+      t.integer :post_id
 
       t.timestamps
     end
