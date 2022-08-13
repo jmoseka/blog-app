@@ -5,6 +5,8 @@ class Post < ApplicationRecord
   has_many :likes
 
   validates :title, presence: true
+  validates :title, length: { maximum: 250 }
+
 
   after_save :update_post_counter
 
