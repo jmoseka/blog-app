@@ -61,7 +61,7 @@ development:
 test:
   <<: *default
   adapter: postgresql
-host: localhost
+  host: localhost
   database: blog_app_test
   username: Jamila
   password: "1234"
