@@ -60,6 +60,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  adapter: postgresql
+host: localhost
   database: blog_app_test
   username: Jamila
   password: "1234"
