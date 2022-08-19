@@ -1,1 +1,16 @@
-<h1>Show list of users</h1> 
+<%= render partial: 'partials/user_partial', locals: { user: @user } %>
+
+<div >
+<p>Bio
+<p>
+<%= @user.bio%>
+</p>
+</p>
+
+<% @recent_post.each do |recent| %>
+
+<%= render partial: 'partials/post_partial', locals: { post: recent}  %>
+<% end %>
+
+<%= link_to("See all the post", user_posts_path(@user), class: "see-all")  %>
+</div>
