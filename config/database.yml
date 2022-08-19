@@ -21,9 +21,6 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV['POSTGRES_IP'] %>
-  user: <%= ENV['APP_USER_POSTGRES_USER'] %>
-  password: <%= ENV['APP_USER_POSTGRES_PASSWORD'] %>
 
 development:
   <<: *default
@@ -61,9 +58,10 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-
 test:
   <<: *default
+  adapter: postgresql
+  host: localhost
   database: blog_app_test
   username: Jamila
   password: "1234"
