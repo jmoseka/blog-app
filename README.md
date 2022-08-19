@@ -21,21 +21,21 @@ On Visual Studio, open the terminal and do the following steps
 ### Clone this repository
 
 ```bash
-$ git clone https://github.com/jmoseka/my-things-catalog
-$ cd my-things-catalog
+$ git clone https://github.com/jmoseka/blog-app
+$ cd blog-app
 ```
 
 ### Installation
 ```bash
 $ cd gem install rails
+$ cd bundle install
 ```
 
 ### Run RSpec Test
 
 ```bash
 $ gem install rspec
-$ cd spec
-$ rspec file_name
+$ rspec
 ```
 
 - **Congrats!** you can now run ruby application on your computer
