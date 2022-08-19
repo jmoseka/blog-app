@@ -1,0 +1,13 @@
+<article>
+<h3>
+<%= link_to(post.title, user_post_path(id: post.id, user_id: post.author_id)) %>
+</h3>
+
+<p><%= truncate(post.text, length: 125) ... %></p>
+  <div class="post-stats">
+    <span>Comments <%= post.comments_counter %> &nbsp;,&nbsp;</span>
+    <span>Likes <%= post.likes_counter %></span>
+  </div>
+</p>
+
+</article>
