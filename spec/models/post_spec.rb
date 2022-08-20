@@ -41,7 +41,7 @@ RSpec.describe Post, type: :model do
     subject { User.new(name: 'Jamila Kc', photo: 'profile.png', bio: 'Jamila the great', posts_counter: 0) }
     before { subject.save }
     it 'Should have maximum of five comments' do
-      expect(subject.last_recent_posts).to eq(subject.last_recent_posts)
+      expect(subject.recent_post).to eq(subject.recent_post)
     end
   end
 end
