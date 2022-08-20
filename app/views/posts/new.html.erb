@@ -1,0 +1,22 @@
+<h1>Create new post article</h1>
+<%= form_for @post, url: user_posts_path do |f| %>
+  <% if @post.errors.any? %>
+    <ul class="errors">
+      <% @post.errors.full_messages.each do |message| %>
+        <li>
+          <%= message %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= f.hidden_field :author_id, value: @params ? @params['user_id'] : '' %>
+  <div>
+    <%= f.label :title %><br />
+    <%= f.text_field :title, placeholder: 'Article title' %>
+  </div>
+  <div>
+    <%= f.label :text, "Description" %><br />
+    <%= f.text_area :text, placeholder: 'Type your article message in here...' %>
+  </div>
+  <%= f.submit "Submit post", disable_with: 'Submiting...' %>
+<% end %> 
