@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Posts Controller', type: :request do
   describe 'GET /users/:user_id/posts' do
     it 'is a success' do
-      get '/users/2/posts'
+      get '/users/2/postss'
       expect(response).to have_http_status(:ok)
     end
     it "renders 'index' template" do
