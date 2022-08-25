@@ -3,11 +3,6 @@
 <%= form_for(resource, as: resource_name, html: {'data-turbo' => "false"}, url: session_path(resource_name)) do |f| %>
   <div class="field">
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
