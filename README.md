@@ -62,6 +62,13 @@ $ rspec
 - Twitter: [@milamoseka](https://twitter.com/milamoseka)
 - LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
 
+👤 **Frankline Osoro**
+
+- GitHub: [@frank1738](https://github.com/frank1738)
+- Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
+- LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
+
+
 
 ## 🤝 Contributing
 
